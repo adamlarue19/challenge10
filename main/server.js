@@ -64,7 +64,17 @@ app.post('/api/notes', (req, res) => {
             ? console.error(writeErr)
             : console.info('Successfully updated notes!')
       );
-    }
+  //       fs.appendFile(
+  //         './db/db.json',
+  //        JSON.stringify(parsedNotes), (err) => {
+  //         if (err) {
+  //           console.error(err);
+  //         }else{
+  //           console.log("\nFile Contents of file after append:",
+  //           fs.readFileSync('./db/db.json', "utf8"));
+  //         }
+  //       });
+    };
   });
   const response = {
     status: 'success',
